@@ -16,10 +16,10 @@ export default function App() {
                         <button>Homepage</button>
                     </NavLink>
                     <NavLink to="/book" className={({ isActive }) => isActive ? "button-active" : ""}>
-                        <button>Book hotel room</button>
+                        <button>Book Hotel Room</button>
                     </NavLink>
                     <NavLink to="/cancel" className={({ isActive }) => isActive ? "button-active" : ""}>
-                        <button>Cancel Reservation</button>
+                        <button>Cancel Booking</button>
                     </NavLink>
                 </nav>
                 <div className="content-style">
