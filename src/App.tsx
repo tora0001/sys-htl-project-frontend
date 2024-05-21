@@ -12,7 +12,7 @@ export default function App() {
                     <h1>HTL HOTEL</h1>
                 </div>
                 <nav className="nav-style">
-                    <NavLink to="/home" className={({ isActive }) => isActive ? "button-active" : ""}>
+                    <NavLink to="/" className={({ isActive }) => isActive ? "button-active" : ""}>
                         <button>Homepage</button>
                     </NavLink>
                     <NavLink to="/book" className={({ isActive }) => isActive ? "button-active" : ""}>
@@ -24,7 +24,7 @@ export default function App() {
                 </nav>
                 <div className="content-style">
                     <Routes>
-                        <Route path="/home" element={<HotelHomePage />} />
+                        <Route path="/" element={<HotelHomePage />} />
                         <Route path="/book" element={<BookRoom />} />
                         <Route path="/cancel" element={<CancelReservation />} />
                     </Routes>
