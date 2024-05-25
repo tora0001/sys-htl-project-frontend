@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // Define TypeScript interfaces for the room data
 interface RoomType {
@@ -13,7 +13,7 @@ interface Room {
     roomType: RoomType;
 }
 
-const BookRoom: React.FC = () => {
+const BookRoom = () => {
     const [rooms, setRooms] = useState<Room[]>([]);
 
     useEffect(() => {
