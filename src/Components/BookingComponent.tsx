@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import CreateBooking from './CreateBookingComponent'; // Adjust the import path as necessary
 
 // Define TypeScript interfaces for the room data
 interface RoomType {
@@ -37,6 +38,10 @@ const BookRoom = () => {
             });
     }, []);
 
+    const handleBooking = (roomID: number) => {
+        CreateBooking(roomID);
+    };
+
     return (
         <div>
             <h2>Here you can book a room</h2>
@@ -47,6 +52,7 @@ const BookRoom = () => {
                             <h3>{room.roomType.roomDesc}</h3>
                             <p>Price: ${room.roomType.roomPrice}</p>
                             <p>Beds: {room.roomType.beds}</p>
+                            <button onClick={() => handleBooking(room.roomID)}>Book Room</button>
                         </div>
                     ))
                 ) : (

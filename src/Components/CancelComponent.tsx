@@ -100,9 +100,9 @@ const CancelReservation = () => {
                             placeholder="Enter booking email"
                             style={{ margin: '10px' }}
                         />
-                        <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-                            <button onClick={handlePopupDelete} style={{ marginRight: '10px' }}>Cancel Booking</button>
+                        <div style={{display: 'flex', justifyContent: 'space-between', width: '100%'}}>
                             <button onClick={closePopup}>Cancel</button>
+                            <button onClick={handlePopupDelete} style={{marginRight: '10px'}}>Confirm</button>
                         </div>
                     </div>
                 </div>
